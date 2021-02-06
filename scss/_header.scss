@@ -1,0 +1,26 @@
+.header {
+	position: absolute;
+	width: 100%;
+	padding-top: 50px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+
+.sign {
+	&__btn {
+		color: #ffffff;
+		font-size: 12px;
+		padding: 6px 20px;
+		border-radius: 2px;
+		border: 1px solid #ffffff;
+		background-color: transparent;
+		&:hover {
+			background-color: rgba(#ffffff, 0.3);
+		}
+	}
+}

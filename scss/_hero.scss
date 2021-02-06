@@ -1,0 +1,82 @@
+.hero {
+	background: linear-gradient(-53deg, rgba(#00b8d4, 0.9) 0%, rgba(#1de9b6,0.9) 100%), url('../img/hero-bg.jpg') center / cover no-repeat;
+	padding-top: 235px;
+	padding-bottom: 185px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content {
+		max-width: 670px;
+	}
+	&__title {
+		color: #ffffff;
+		font-size: 55px;
+		font-weight: 700;
+		line-height: 65px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		max-width: 470px;
+		letter-spacing: 1.53px;
+	}
+	&__text {
+		color: #ffffff;
+		font-size: 18px;
+		line-height: 35px;
+		margin-bottom: 32px;
+	}
+	&__buttons {
+		display: flex;
+		align-items: center;
+	}
+	&__btn {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+	&__video {
+		width: 600px;
+		height: 320px;
+		border-radius: 5px;
+		overflow: hidden;
+		position: relative;
+		border: 1px solid #061e37;
+	}
+	&__preview {
+		height: 100%;
+		width: 100%;
+		background-color: rgba(#ffffff, 0.9);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+	}
+	&__video-btn {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		background-color: #061e37;
+		margin-bottom: 20px;
+	}
+	&__video-text {
+		color: #061e37;
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background: url('../img/hero-video.jpg') center / cover no-repeat; 
+	}
+}
