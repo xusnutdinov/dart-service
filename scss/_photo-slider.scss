@@ -1,0 +1,42 @@
+.photo-slider {
+    max-width: 100%;
+    overflow: hidden;
+
+    &__wrapper {
+        height: 160px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__item {
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        opacity: 0.2;
+        border-radius: 50%;
+        transition: all 0.6s;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .swiper-slide-active {
+        .photo-slider__img {
+            width: 160px;
+            height: 160px;
+            opacity: 1;
+            transition: all 0.6s;
+        }
+    }
+}

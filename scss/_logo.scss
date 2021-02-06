@@ -1,0 +1,21 @@
+.logo {
+	display: flex;
+	align-items: center;
+	&__img {
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+	}
+	&__text {
+		color: #ffffff;
+		font-size: 15px;
+		font-weight: 800;
+		line-height: 15px;
+		text-transform: uppercase;
+		span {
+			display: block;
+			font-weight: 400;
+			margin-bottom: 3px;
+		}
+	}
+}

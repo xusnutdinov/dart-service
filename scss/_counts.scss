@@ -1,0 +1,58 @@
+.counts {
+	&__row {
+		display: flex;
+	}
+	&__item {
+		flex: 0 0 25%;
+		padding: 45px 0;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__img {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #ffffff;
+		border-radius: 50%;
+		margin-right: 23px;
+	}
+	&__text {
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: 800;
+		text-align: left;
+		span {
+			margin-bottom: 5px;
+			display: block;
+		}
+	}
+	&__item--anakiwa {
+		background-color: #80d8ff;
+		.counts__img {
+			color: #80d8ff;
+		}
+	}
+	&__item--malibu {
+		background-color: #82b1ff;
+		.counts__img {
+			color: #82b1ff;
+		}
+	}
+	&__item--heliotrope {
+		background-color: #b388ff;
+		.counts__img {
+			color: #b388ff;
+		}
+	}
+	&__item--pink {
+		background-color: #ea80fc;
+		.counts__img {
+			color: #ea80fc;
+		}
+	}
+}
+
